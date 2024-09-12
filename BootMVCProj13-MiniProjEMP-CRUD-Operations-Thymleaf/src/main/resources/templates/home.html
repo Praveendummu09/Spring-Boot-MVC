@@ -1,0 +1,25 @@
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Employee Home Page</title>
+ <style>
+        body {
+            background-image: url('images/home.jpg');
+            background-size: cover; /* This makes the image cover the entire page */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-position: center; /* Centers the image */
+        }
+    </style>
+</head>
+
+<body>
+	<div th:style="'background:url(' + @{/images/home.jpg} + '); 		width: 1200px; height: 1200px;'">
+<h1 style="text-align: center;color: Orange;"> Home Page</h1><br><br><br>
+<h3 style="text-align:center;color: oliv; 0 0 10px rgba(0, 255, 0, 0.7); "><a th:href="@{/employee/report}">Get Employee Data</a> </h3>
+<br>
+<h3 style="text-align:center;color: olive; "><a th:href="@{/employee/report}"><img alt="Image not found" th:src="@{/images/OIP.jpeg}" width="150" height="200"></a></h3>
+
+</div>
+</body>
+</html>
